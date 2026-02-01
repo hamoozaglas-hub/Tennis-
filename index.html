@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tennis Pro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e7f3b">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="glass">
+  <h1>🎾 Tennis Pro</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="game.html">Game</a>
+    <a href="videos.html">Videos</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<main class="hero">
+  <h2>Train. Play. Improve.</h2>
+  <p>A modern tennis experience built for players.</p>
+  <div class="buttons">
+    <button onclick="location.href='game.html'">Play Game</button>
+    <button class="outline" onclick="location.href='videos.html'">Watch Videos</button>
+  </div>
+</main>
+
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js");
+}
+</script>
+</body>
+</html>
