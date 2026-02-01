@@ -1,0 +1,56 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: linear-gradient(135deg, #1e7f3b, #0f3d2e);
+  color: white;
+}
+
+.glass {
+  backdrop-filter: blur(10px);
+  background: rgba(0,0,0,0.3);
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #9dffb0;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.12);
+  padding: 20px;
+  margin: 30px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+button {
+  background: #9dffb0;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button.outline {
+  background: transparent;
+  border: 2px solid #9dffb0;
+  color: #9dffb0;
+}
